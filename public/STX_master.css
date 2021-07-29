@@ -1,0 +1,268 @@
+.container{
+	background-color:gray;
+	visibility: hidden;
+}
+
+.Skill {
+	background: radial-gradient(grey 10%, black );
+	position: relative;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+}
+.Skill2{
+	background: radial-gradient(grey 10%, black );
+	position: absolute;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+}
+#points{
+	position: absolute;
+	left:22rem;
+	top: 10rem;
+}
+#myLoader{
+	position: absolute;
+	top: 22rem;
+	left: 22rem;
+}
+#mySaver{
+	position: absolute;
+	top: 22rem;
+	left: 35rem;
+}
+#FormatInput{
+	position: absolute;
+	top: 18rem;
+	left: 35rem;
+}
+#ExplorationFlag{
+	position: absolute;
+	top: 0.5rem;
+	left: 22rem;
+}
+#NecromancyFlag{
+	position: absolute;
+	top: 3.5rem;
+	left: 22rem;
+}
+#ArchaeomancyFlag{
+	position: absolute;
+	top: 6.5rem;
+	left: 22rem;
+}
+#InkomancyFlag{
+	position: absolute;
+	top: 0.5rem;
+	left :35rem;
+}
+#ElementomancyFlag{
+	position: absolute;
+	top: 3.5rem;
+	left: 35rem;
+}
+.connector{
+	top: -30px;
+	left: 50px;
+	width: 0.4rem;
+	height: 2.5rem;
+	background-color: green;
+	position: absolute;
+}
+.Attr1Style{
+	position: absolute;
+	left: 3rem;
+}
+.Attr2Style{
+	position: absolute;
+	top: 0.5rem;
+	left: 15rem;
+}
+.Attr3Style{
+	position: absolute;
+	top: 5.5rem;
+	left: 1rem;
+}
+.Attr4Style{
+	position: absolute;
+	top: 5.5rem;
+	left: 5rem;
+}
+.Attr5Style{
+	position: absolute;
+	top: 11rem;
+	left: 3rem;
+}
+.Attr6Style{
+	position: absolute;
+	top: 16.5rem;
+	left: 3rem;
+}
+.Attr7Style{
+	position: absolute;
+	top: 5.5rem;
+	left: 12rem;
+}
+.Attr8Style{
+	position: absolute;
+	top: 5.5rem;
+	left: 18rem;
+}
+.Attr9Style{
+	position: absolute;
+	top: 11rem;
+	left: 15rem;
+}
+#Attr1-Attr3, #nmAttr1-Attr3, #arAttr1-Attr3{
+	transform: rotate(25deg);
+	top: 3.15rem;
+	left: 3rem;
+}
+#Attr1-Attr4, #nmAttr1-Attr4, #arAttr1-Attr4{
+	transform: rotate(-25deg);
+	top: 3.15rem;
+	left: 5.5rem;
+}
+#Attr3-Attr5, #nmAttr3-Attr5, #arAttr3-Attr5{
+	transform: rotate(-25deg);
+	top: 8.3rem;
+	left: 3rem;
+	height: 3rem;
+}
+#Attr4-Attr5, #nmAttr4-Attr5, #arAttr4-Attr5{
+	transform: rotate(25deg);
+	top: 8.3rem;
+	left: 5.5rem;
+	height: 3rem;
+}
+#Attr5-Attr6, #nmAttr5-Attr6, #arAttr5-Attr6{
+	top: 13.45rem;
+	left: 4.25rem;
+	height: 3rem;
+}
+#Attr2-Attr7, #nmAttr2-Attr7, #arAttr2-Attr7{
+	transform: rotate(25deg);
+	top: 3rem;
+	left: 14.7rem;
+	height: 3rem;
+}
+#Attr2-Attr8, #nmAttr2-Attr8, #arAttr2-Attr8{
+	transform: rotate(-25deg);
+	top: 3rem;
+	left: 17.7rem;
+	height: 3rem;
+}
+#Attr7-Attr9, #nmAttr7-Attr9, #arAttr7-Attr9{
+	transform: rotate(-25deg);
+	top: 8.1rem;
+	left: 14.7rem;
+	height: 3.4rem;
+}
+#Attr8-Attr9, #nmAttr8-Attr9, #arAttr8-Attr9{
+	transform: rotate(25deg);
+	top: 8.1rem;
+	left: 17.7rem;
+	height: 3.4rem;
+}
+.Attr1Style2{
+	left: 6rem;
+}
+.Attr2Style2, .Attr3Style2, .Attr4Style2{
+	top: 6rem;
+}
+.Attr5Style2, .Attr6Style2{
+	top: 12rem;
+}
+.Attr2Style2, .Attr5Style2{
+	left: 0rem;
+}
+.Attr3Style2, .Attr7Style2{
+	left: 6rem;
+}
+.Attr4Style2, .Attr8Style2{
+	left: 12rem;
+}
+.Attr7Style2, .Attr8Style2{
+	top: 18rem;
+}
+.Attr6Style2 {
+	left: 9rem;
+}
+.Attr9Style2{
+	top: 24rem;
+	left: 9rem;
+}
+#ioAttr1-Attr3, #elAttr1-Attr3{
+	top: 3.5rem;
+	left: 7.25rem;
+}
+#ioAttr1-Attr2, #elAttr1-Attr2{
+	top: 1.8rem;
+	left: 3.5rem;
+	height: 7.25rem;
+	transform: rotate(44deg);
+}
+#ioAttr1-Attr4, #elAttr1-Attr4{
+	top: 1.8rem;
+	left: 11rem;
+	height: 7rem;
+	transform: rotate(-44deg);
+}
+#ioAttr2-Attr5, #elAttr2-Attr5{
+	top: 8rem;
+	left: 1.25rem;
+	height: 5rem;
+}
+#ioAttr3-Attr6, #elAttr3-Attr6{
+	top: 8rem;
+	left: 9rem;
+	height: 5rem;
+	transform: rotate(-25deg);
+}
+#ioAttr4-Attr6, #elAttr4-Attr6{
+	top: 8rem;
+	left: 12rem;
+	height: 5rem;
+	transform: rotate(25deg);
+}
+#ioAttr3-Attr7, #elAttr3-Attr7{
+	top: 8rem;
+	left: 7.25rem;
+	height: 12rem;
+}
+#ioAttr7-Attr9, #elAttr7-Attr9{
+	top: 20rem;
+	left: 8.5rem;
+	height: 5rem;
+	transform: rotate(-25deg);
+}
+#ioAttr6-Attr8, #elAttr6-Attr8{
+	top: 14rem;
+	left: 11.5rem;
+	height: 5rem;
+	transform: rotate(-25deg);
+}
+#ioAttr8-Attr9, #elAttr8-Attr9{
+	top: 20rem;
+	left: 12rem;
+	height: 5rem;
+	transform: rotate(25deg);
+}
+
+.descbox{
+ background: gray;
+ visibility: visible;
+ width: 150px;
+ height: 20px;
+ position: relative;
+}
+
+.tooltip{
+	position: absolute;
+	background-color: gray;
+	visibility: hidden;
+	width: 150px;
+	height: 40px;
+	z-index: 1000;
+}
