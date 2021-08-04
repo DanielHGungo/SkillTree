@@ -37,6 +37,11 @@
 	top: 18rem;
 	left: 35rem;
 }
+#displayMyUser{
+	position: absolute;
+	left: 35rem;
+	top: 6.5rem;
+}
 #ExplorationFlag{
 	position: absolute;
 	top: 0.5rem;

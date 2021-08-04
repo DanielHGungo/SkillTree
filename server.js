@@ -12,20 +12,22 @@ if (process.env.NODE_ENV !== 'production'){
 const MongoClient = require('mongodb').MongoClient
 
 const StrixhavenDAO = require('./public/dao/arcanumDAO')
-const MoviesDAO = require('./public/dao/moviesDAO')
+// const MoviesDAO = require('./public/dao/moviesDAO')
 const http = require('http')
 const fs = require('fs')
 const express = require('express')
 const app = express()
-const expressLayouts = require('express-ejs-layouts')
+// const expressLayouts = require('express-ejs-layouts')
 
 const indexRouter = require('./routes/index')
+const skilltreeRouter = require('./routes/skilltree')
+// const loginRouter = require('./routes/login')
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname  + '/views')
-app.set('layout', 'layouts/layout')
+// app.set('layout', 'layouts/layout')
 app.use(express.json())
-app.use(expressLayouts)
+// app.use(expressLayouts)
 app.use(express.static('public'))
 app.use(express.urlencoded({ limit: '10mb', extended: false }))
 
@@ -49,5 +51,7 @@ MongoClient.connect(process.env.DATABASE_URL, {useNewUrlParser: true, useUnified
     })
 
 app.use('/', indexRouter)
+app.use('/skilltree', skilltreeRouter)
+// app.use('/login', loginRouter)
 
 app.listen(process.env.PORT || 3000)

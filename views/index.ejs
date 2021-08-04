@@ -1,145 +1,22 @@
-<div class="container" id="Exploration">
-    
-    <div class="connector" id="Attr1-Attr3"></div>
-    <div class="connector" id="Attr1-Attr4"></div>
-    <div class="connector" id="Attr3-Attr5"></div>
-    <div class="connector" id="Attr4-Attr5"></div>
-    <div class="connector" id="Attr5-Attr6"></div>
-    <div class="connector" id="Attr2-Attr7"></div>
-    <div class="connector" id="Attr2-Attr8"></div>
-    <div class="connector" id="Attr7-Attr9"></div>
-    <div class="connector" id="Attr8-Attr9"></div>
-    <button type="button" class="Skill Attr1Style" id="Attr1" onmouseleave="tooltipdelete(`exAttr1Text`)"
-        onmouseover="tooltip(`exAttr1Text`)" onclick="newPower(`Attr1`, 0)">Guide</button>
-    <button type="button" class="Skill Attr2Style" id="Attr2" onmouseleave="tooltipdelete(`exAttr2Text`)"
-        onmouseover="tooltip(`exAttr2Text`)" onclick="newPower(`Attr2`, 0)">Scavenger</button>
-    <button type="button" class="Skill Attr3Style" id="Attr3" onclick="newPower(`Attr3`, 0)">Attr3</button>
-    <button type="button" class="Skill Attr4Style" id="Attr4" onclick="newPower(`Attr4`, 0)">Attr4</button>
-    <button type="button" class="Skill Attr5Style" id="Attr5" onclick="newPower(`Attr5`, 0)">Attr5</button>
-    <button type="button" class="Skill Attr6Style" id="Attr6" onclick="newPower(`Attr6`, 0)">Attr6</button>
-    <button type="button" class="Skill Attr7Style" id="Attr7" onclick="newPower(`Attr7`, 0)">Attr7</button>
-    <button type="button" class="Skill Attr8Style" id="Attr8" onclick="newPower(`Attr8`, 0)">Attr8</button>
-    <button type="button" class="Skill Attr9Style" id="Attr9" onclick="newPower(`Attr9`, 0)">Attr9</button>
-
-</div>
-<div class="container" id="Necromancy">
-    <div class="connector" id="nmAttr1-Attr3"></div>
-    <div class="connector" id="nmAttr1-Attr4"></div>
-    <div class="connector" id="nmAttr3-Attr5"></div>
-    <div class="connector" id="nmAttr4-Attr5"></div>
-    <div class="connector" id="nmAttr5-Attr6"></div>
-    <div class="connector" id="nmAttr2-Attr7"></div>
-    <div class="connector" id="nmAttr2-Attr8"></div>
-    <div class="connector" id="nmAttr7-Attr9"></div>
-    <div class="connector" id="nmAttr8-Attr9"></div>
-        <button type="button" class="Skill Attr1Style" id="nmAttr1" onclick="newPower(`Attr1`, 1)">nmAttr1</button>
-    <button type="button" class="Skill Attr2Style" id="nmAttr2" onclick="newPower(`Attr2`, 1)">nmAttr2</button>
-    <button type="button" class="Skill Attr3Style" id="nmAttr3" onclick="newPower(`Attr3`, 1)">nmAttr3</button>
-    <button type="button" class="Skill Attr4Style" id="nmAttr4" onclick="newPower(`Attr4`, 1)">nmAttr4</button>
-    <button type="button" class="Skill Attr5Style" id="nmAttr5" onclick="newPower(`Attr5`, 1)">nmAttr5</button>
-    <button type="button" class="Skill Attr6Style" id="nmAttr6" onclick="newPower(`Attr6`, 1)">nmAttr6</button>
-    <button type="button" class="Skill Attr7Style" id="nmAttr7" onclick="newPower(`Attr7`, 1)">nmAttr7</button>
-    <button type="button" class="Skill Attr8Style" id="nmAttr8" onclick="newPower(`Attr8`, 1)">nmAttr8</button>
-    <button type="button" class="Skill Attr9Style" id="nmAttr9" onclick="newPower(`Attr9`, 1)">nmAttr9</button>
-
-</div>
-<div class="container" id="Archaeomancy">
-    
-    <div class="connector" id="arAttr1-Attr3"></div>
-    <div class="connector" id="arAttr1-Attr4"></div>
-    <div class="connector" id="arAttr3-Attr5"></div>
-    <div class="connector" id="arAttr4-Attr5"></div>
-    <div class="connector" id="arAttr5-Attr6"></div>
-    <div class="connector" id="arAttr2-Attr7"></div>
-    <div class="connector" id="arAttr2-Attr8"></div>
-    <div class="connector" id="arAttr7-Attr9"></div>
-    <div class="connector" id="arAttr8-Attr9"></div>
-    <button type="button" class="Skill Skillclr2 Attr1Style" id="arAttr1" onclick="newPower(`Attr1`, 2)">Attr1</button>
-    <button type="button" class="Skill Skillclr2 Attr2Style" id="arAttr2" onclick="newPower(`Attr2`, 2)">Attr2</button>
-    <button type="button" class="Skill Skillclr2 Attr3Style" id="arAttr3" onclick="newPower(`Attr3`, 2)">Attr3</button>
-    <button type="button" class="Skill Skillclr2 Attr4Style" id="arAttr4" onclick="newPower(`Attr4`, 2)">Attr4</button>
-    <button type="button" class="Skill Skillclr2 Attr5Style" id="arAttr5" onclick="newPower(`Attr5`, 2)">Attr5</button>
-    <button type="button" class="Skill Skillclr2 Attr6Style" id="arAttr6" onclick="newPower(`Attr6`, 2)">Attr6</button>
-    <button type="button" class="Skill Skillclr2 Attr7Style" id="arAttr7" onclick="newPower(`Attr7`, 2)">Attr7</button>
-    <button type="button" class="Skill Skillclr2 Attr8Style" id="arAttr8" onclick="newPower(`Attr8`, 2)">Attr8</button>
-    <button type="button" class="Skill Skillclr2 Attr9Style" id="arAttr9" onclick="newPower(`Attr9`, 2)">Attr9</button>
-
-</div>
-<div class="container" id="Inkomancy">
-    <div class="connector" id="ioAttr1-Attr3"></div>
-    <div class="connector" id="ioAttr1-Attr2"></div>
-    <div class="connector" id="ioAttr1-Attr4"></div>
-    <div class="connector" id="ioAttr2-Attr5"></div>
-    <div class="connector" id="ioAttr3-Attr7"></div>
-    <div class="connector" id="ioAttr4-Attr6"></div>
-    <div class="connector" id="ioAttr3-Attr6"></div>
-    <div class="connector" id="ioAttr6-Attr8"></div>
-    <div class="connector" id="ioAttr7-Attr9"></div>
-    <div class="connector" id="ioAttr8-Attr9"></div>
-    <button type="button" class="Skill2 Attr1Style2" id="ioAttr1" onclick="newPower(`Attr1`, 3)">ioAttr1</button>
-    <button type="button" class="Skill2 Attr2Style2" id="ioAttr2" onclick="newPower(`Attr2`, 3)">ioAttr2</button>
-    <button type="button" class="Skill2 Attr3Style2" id="ioAttr3" onclick="newPower(`Attr3`, 3)">ioAttr3</button>
-    <button type="button" class="Skill2 Attr4Style2" id="ioAttr4" onclick="newPower(`Attr4`, 3)">ioAttr4</button>
-    <button type="button" class="Skill2 Attr5Style2" id="ioAttr5" onclick="newPower(`Attr5`, 3)">ioAttr5</button>
-    <button type="button" class="Skill2 Attr6Style2" id="ioAttr6" onclick="newPower(`Attr6`, 3)">ioAttr6</button>
-    <button type="button" class="Skill2 Attr7Style2" id="ioAttr7" onclick="newPower(`Attr7`, 3)">ioAttr7</button>
-    <button type="button" class="Skill2 Attr8Style2" id="ioAttr8" onclick="newPower(`Attr8`, 3)">ioAttr8</button>
-    <button type="button" class="Skill2 Attr9Style2" id="ioAttr9" onclick="newPower(`Attr9`, 3)">ioAttr9</button>
-
-</div>
-<div class="container" id="Elementomancy">
-    <div class="connector" id="elAttr1-Attr3"></div>
-    <div class="connector" id="elAttr1-Attr2"></div>
-    <div class="connector" id="elAttr1-Attr4"></div>
-    <div class="connector" id="elAttr2-Attr5"></div>
-    <div class="connector" id="elAttr3-Attr7"></div>
-    <div class="connector" id="elAttr4-Attr6"></div>
-    <div class="connector" id="elAttr3-Attr6"></div>
-    <div class="connector" id="elAttr6-Attr8"></div>
-    <div class="connector" id="elAttr7-Attr9"></div>
-    <div class="connector" id="elAttr8-Attr9"></div>
-    <button type="button" class="Skill2 Attr1Style2" id="elAttr1" onclick="newPower(`Attr1`, 4)">elAttr1</button>
-    <button type="button" class="Skill2 Attr2Style2" id="elAttr2" onclick="newPower(`Attr2`, 4)">elAttr2</button>
-    <button type="button" class="Skill2 Attr3Style2" id="elAttr3" onclick="newPower(`Attr3`, 4)">elAttr3</button>
-    <button type="button" class="Skill2 Attr4Style2" id="elAttr4" onclick="newPower(`Attr4`, 4)">elAttr4</button>
-    <button type="button" class="Skill2 Attr5Style2" id="elAttr5" onclick="newPower(`Attr5`, 4)">elAttr5</button>
-    <button type="button" class="Skill2 Attr6Style2" id="elAttr6" onclick="newPower(`Attr6`, 4)">elAttr6</button>
-    <button type="button" class="Skill2 Attr7Style2" id="elAttr7" onclick="newPower(`Attr7`, 4)">elAttr7</button>
-    <button type="button" class="Skill2 Attr8Style2" id="elAttr8" onclick="newPower(`Attr8`, 4)">elAttr8</button>
-    <button type="button" class="Skill2 Attr9Style2" id="elAttr9" onclick="newPower(`Attr9`, 4)">elAttr9</button>
-
-</div>
-<div class="tooltip" id="exAttr2Text">The Scavenger can roll Nature or Investigation checks with advantage when
-    pertaining to loot</div>
-<div class="tooltip" id="exAttr1Text">The Guide gets to reroll Survival Checks!</div>
-
-<button type="button" class="Toogler" id="ExplorationFlag" onclick="hideAllBut(`Exploration`)">Exploration</button>
-<button type="button" class="Toogler" id="NecromancyFlag" onclick="hideAllBut(`Necromancy`)">Necromancy</button>
-<button type="button" class="Toogler" id="ArchaeomancyFlag" onclick="hideAllBut(`Archaeomancy`)">
-    Archaeomancy</button>
-<button type="button" class="Toogler" id="InkomancyFlag" onclick="hideAllBut(`Inkomancy`)">Inkomancy</button>
-<button type="button" class="Toogler" id="ElementomancyFlag" onclick="hideAllBut(`Elementomancy`)">Elementomancy</button>
-
-
-
-<p id="points">Skill Points available: n/a </p>
-<!-- <p id="theDB">My default text</p>
-<button onclick="pleaseWork(`['USA']`)">Frontend</button> -->
-<form action="/" method="POST" >
-
-  <!-- <script>
-     let hidden_input = document.querySelector("[name='js_object']");
-	 hidden_input.value = JSON.stringify(ButtonTruths);
-  </script> -->
-  <input id="inputBtns" type="hidden" name="myBtns" value="">
-  <!-- <input id="inputAttr2" type="hidden" name="inAttr2" value=""> -->
-  <!-- method="POST" <= belongs up <input type="text" name="junk" value="I can fly like water"> -->
-  <!-- <input type="text" name="junk" value=""> -->
-<button id="mySaver" type="submit">Save My Skills</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Login Page
+<div id="LoginErrorMsg"><%= ErrMsg %></div>
+<form action="/" method="POST">
+<label for="">Username</label>
+<input type="text" value="<%= UserValue %>" name="username">
+<br>
+<label for="">Password</label>
+<input type="text" value="<%= PasswordValue %>" name="password">
+<button type="submit">login</button>
 </form>
-<button id="FormatInput" onclick="trick()">InputDataToObjectForm</button>
-<!-- </form> -->
-<!-- <div id="myData"> this is default data</div> -->
-<button id="myLoader" onclick="loadMySkills()">Load My Skills</button>
-<div id="initialBtns" style="visibility:hidden;"><%= myDoc %></div>
-<!-- <button onclick="getDiv()">getDiv</button> -->
+
+</body>
+</html>

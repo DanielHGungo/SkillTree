@@ -14,11 +14,11 @@ class StrixhavenDAO {
             console.error(`Unable to establish a collection in strixhavenDAO: ${e}`)
         }
     }
-  static async updateArcanum(myObject){
+  static async updateArcanum(myObject, numSkills){
       let cursor
       try{
           cursor = await arcanum.updateOne({owner: 'Daniel'},
-          {$set: {skills: myObject}}
+          {$set: {skills: myObject, numSkills: numSkills}}
           )
       } catch(e){
           console.error(`Unable to updateArcanum ${e}`)
@@ -26,7 +26,7 @@ class StrixhavenDAO {
   }
   static async find(option){
       try{
-          console.log('Fetching a document')
+          console.log('Finding a document')
           return await arcanum.findOne(option)
       }catch(e){
         console.error(`Unable to findOne ${e}`)

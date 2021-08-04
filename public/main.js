@@ -11,8 +11,11 @@ let extractObject;
 let hidden_input;
 let input_Object = {};
 
-var myPoints = 10;
+var LockedButtons = [];
+var LockedButtonsNotCreated = true;
 
+var totalPoints = 0;
+var myPoints = 10;
 let ListOfKeys = ["Attr1", "Attr2", "Attr3", "Attr4", "Attr5", "Attr6", "Attr7", "Attr8", "Attr9"];
 var myCountry = ["USA"];
 var Attr1Array = ["Attr1-Attr3", "Attr1-Attr4"];
@@ -127,8 +130,11 @@ var MancyTruths = {
 	Exploration: false,
 	Archaeomancy: false
 };*/
+
+
 var ListofMancys = ["Exploration", "Necromancy", "Archaeomancy", "Inkomancy", "Elementomancy"];
 //var GuideArray = ["Guide-Scavenger"];
+// e is Attr#, my is the unique # for each Mancy
 function newPower(e, my){
 	let myprefix = getmyID(my);
 	let myE = myprefix + e;
@@ -143,7 +149,7 @@ if(BtnObjSuprArray[my][e] == false){
 		BtnObjSuprArray[my][e] = true;
 		if(my <= 2) {
 		bfs = ButtonFlagSetter(e, my);
-		document.getElementById(myE).style.background = "yellow";
+		document.getElementById(myE).style.background = "aqua";
 		pointUsed();
 		Passer = getMyArray(e, my);
 		LineLighter(Passer, BtnObjSuprArray[my][e], myprefix);
@@ -161,6 +167,14 @@ if(BtnObjSuprArray[my][e] == false){
 
 }
 else if(BtnObjSuprArray[my][e] == true){
+	if(LockedButtons[my][ButtonMasterArray[e]]){
+		console.log('This button is LOCKED!');
+		return;
+	}
+
+	if(document.getElementById(myE).style.background == "yellow"){
+		console.log('that button was yellow!');
+	}
 	//cbs function checks if childs of a button are off, returning true if they're off, false if even 1 is on
 	if(my <= 2){
 		if(AreMyChildsOff(e, my) == true) { 
@@ -260,7 +274,10 @@ function trick(){
 	console.log('Completed change');
 	console.log(input_Object);
 	hidden_input = JSON.stringify(input_Object);
-	document.getElementById('inputBtns').value = hidden_input; 
+	document.getElementById('inputBtns').value = hidden_input;
+	document.getElementById('inputNumSkills').value = 22;
+
+	document.getElementById('skillSaverForm').submit();
 	// hidden_input = JSON.stringify(ButtonTruths);
 	// document.getElementById('inputAttr1').value = hidden_input;
 	// let h2i = JSON.stringify(nmButtonTruths);
