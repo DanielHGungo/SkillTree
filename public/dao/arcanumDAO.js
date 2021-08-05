@@ -14,10 +14,10 @@ class StrixhavenDAO {
             console.error(`Unable to establish a collection in strixhavenDAO: ${e}`)
         }
     }
-  static async updateArcanum(myObject, numSkills){
+  static async updateArcanum(Usr, myObject, numSkills){
       let cursor
       try{
-          cursor = await arcanum.updateOne({owner: 'Daniel'},
+          cursor = await arcanum.updateOne({owner: Usr},
           {$set: {skills: myObject, numSkills: numSkills}}
           )
       } catch(e){
@@ -31,6 +31,18 @@ class StrixhavenDAO {
       }catch(e){
         console.error(`Unable to findOne ${e}`)
     }
+  }
+  static async insertOne(myNewUsr){
+      try{
+        console.log('Creating a new User')
+        await arcanum.insertOne({
+            owner: myNewUsr.owner,
+            password: myNewUsr.password,
+            numSkills: 0,
+        })
+      } catch(e){
+        console.error(`Unable to Create User ${e}`)
+      }
   }
 }
 module.exports = StrixhavenDAO

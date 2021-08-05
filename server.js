@@ -21,6 +21,7 @@ const app = express()
 
 const indexRouter = require('./routes/index')
 const skilltreeRouter = require('./routes/skilltree')
+const signupRouter = require('./routes/signup')
 // const loginRouter = require('./routes/login')
 
 app.set('view engine', 'ejs')
@@ -52,6 +53,7 @@ MongoClient.connect(process.env.DATABASE_URL, {useNewUrlParser: true, useUnified
 
 app.use('/', indexRouter)
 app.use('/skilltree', skilltreeRouter)
+app.use('/signup', signupRouter)
 // app.use('/login', loginRouter)
 
 app.listen(process.env.PORT || 3000)

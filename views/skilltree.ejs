@@ -152,6 +152,7 @@
   <!-- <input id="timingTest" type="hidden" name="myTime" value = "SLOW"> -->
   <input id="inputBtns" type="hidden" name="myBtns" value="">
   <input id="inputNumSkills" type="hidden" name="numSkills">
+  <input id="inputUser" type="hidden" name="myUsr" value="<%= User %>">
   <!-- <input id="inputAttr2" type="hidden" name="inAttr2" value=""> -->
   <!-- method="POST" <= belongs up <input type="text" name="junk" value="I can fly like water"> -->
   <!-- <input type="text" name="junk" value=""> -->
@@ -163,13 +164,21 @@
 <!-- <div id="myData"> this is default data</div> -->
 <button id="myLoader" onclick="loadMySkills()">Load My Skills</button>
 <div id="initialBtns" style="visibility:hidden;"><%= myDoc %></div>
+<div id="initialPoints" style="visibility:hidden;"><%= initialPoints %></div>
+<div id="initialUsr" style="visibility:hidden;"><%= User %></div>
 <div id="displayMyUser">
     <h4>Logged In as: <%= User %> </h4>
-    <!-- <div id="UserLog" ><%= User %></div> -->
+    <!-- <div id="UserLog" ></div> -->
 </div>
 
-<button id="FormatInput" onclick="showLocked()">ShowLockedArray</button>
+<!-- <button id="FormatInput" onclick="showLocked()">ShowLockedArray</button> -->
 
 <!-- <button onclick="getDiv()">getDiv</button> -->
+<div id="ResetBlock">
+<button id="ResetSkills" onclick='resetMySkills(true)'>Reset Skills</button>
+<p id="ResetStatus"></p>
+</div>
+<h2 id='MancyTitle'></h2>
+<button id="pointManipulator" onclick="changePoints()">Add a Skillpoint</button>
 </body>
 </html>

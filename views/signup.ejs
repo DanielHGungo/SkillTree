@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="points.js"></script>
+    <title>Document</title>
+</head>
+<body onload="removeInvalidUserMsg()">
+<div id="SignInBlock">
+    <h2>Signup Page</h2>
+    <div id="LoginErrorMsg"><%= ErrMsg %></div>
+    <form action="/signup" method="POST">
+    <label for="">Username</label>
+    <input type="text" value="<%= UserValue %>" name="username">
+    <br>
+    <label for="">Password</label>
+    <input type="password" value="<%= PasswordValue %>" name="password">
+    <button type="submit">Create Account</button>
+    </form>
+    <a href="/">Return to Login</a>
+    <!-- <button onclick="showLoginBlock()">Return to Login</button> -->
+</div>
+        
+</body>
+</html>

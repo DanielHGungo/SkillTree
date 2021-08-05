@@ -1,3 +1,4 @@
+
 .container{
 	background-color:gray;
 	visibility: hidden;
@@ -27,12 +28,22 @@
 	top: 22rem;
 	left: 22rem;
 }
+#pointManipulator{
+	position: absolute;
+	top: 18rem;
+	left: 22rem;
+}
 #mySaver{
 	position: absolute;
 	top: 22rem;
 	left: 35rem;
 }
 #FormatInput{
+	position: absolute;
+	top: 18rem;
+	left: 35rem;
+}
+#ResetBlock{
 	position: absolute;
 	top: 18rem;
 	left: 35rem;
@@ -74,6 +85,11 @@
 	height: 2.5rem;
 	background-color: green;
 	position: absolute;
+}
+#MancyTitle{
+	position: absolute;
+	top: -0.5rem;
+	left: 6.5rem;
 }
 .Attr1Style{
 	position: absolute;

@@ -11,11 +11,41 @@ let extractObject;
 let hidden_input;
 let input_Object = {};
 
-var LockedButtons = [];
-var LockedButtonsNotCreated = true;
+var LockedButtons = [
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false],
+[false, false, false, false, false, false, false, false, false]
+];
+// var LockedButtonsNotCreated = true;
 
-var totalPoints = 0;
-var myPoints = 10;
+var totalPoints = 100;
+var pointsUsed = 0;
+var myPoints = 99;
+
 let ListOfKeys = ["Attr1", "Attr2", "Attr3", "Attr4", "Attr5", "Attr6", "Attr7", "Attr8", "Attr9"];
 var myCountry = ["USA"];
 var Attr1Array = ["Attr1-Attr3", "Attr1-Attr4"];
@@ -149,7 +179,7 @@ if(BtnObjSuprArray[my][e] == false){
 		BtnObjSuprArray[my][e] = true;
 		if(my <= 2) {
 		bfs = ButtonFlagSetter(e, my);
-		document.getElementById(myE).style.background = "aqua";
+		document.getElementById(myE).style.background = "yellow";
 		pointUsed();
 		Passer = getMyArray(e, my);
 		LineLighter(Passer, BtnObjSuprArray[my][e], myprefix);
@@ -250,6 +280,7 @@ function hideAllBut(e) {
 		document.getElementById(ListofMancys[k]).style.visibility = "hidden";
 	}
 	document.getElementById(e).style.visibility = "visible";
+	document.getElementById('MancyTitle').innerHTML = e;
 }
 
 // function submit(){
@@ -265,7 +296,7 @@ function hideAllBut(e) {
 // 	document.getElementById('myData').innerHTML = "This is my NEW data";
 // }
 //UNUSED TRICK?
-//TODO: Once Save my skills is done, do not allow Load my skills.
+
 function trick(){
 	console.log('Creating the input_Object: ');
 	for(let k=0; k<ListofMancys.length; k++){
@@ -275,7 +306,7 @@ function trick(){
 	console.log(input_Object);
 	hidden_input = JSON.stringify(input_Object);
 	document.getElementById('inputBtns').value = hidden_input;
-	document.getElementById('inputNumSkills').value = 22;
+	document.getElementById('inputNumSkills').value = totalPoints;
 
 	document.getElementById('skillSaverForm').submit();
 	// hidden_input = JSON.stringify(ButtonTruths);

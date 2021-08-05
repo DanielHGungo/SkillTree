@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STX_Login.css">
+    <script src="points.js"></script>
     <title>Document</title>
 </head>
-<body>
-Login Page
+<body onload="removeInvalidUserMsg()">
+<div id="LoginBlock">
+<h2>Login Page</h2>
 <div id="LoginErrorMsg"><%= ErrMsg %></div>
 <form action="/" method="POST">
 <label for="">Username</label>
 <input type="text" value="<%= UserValue %>" name="username">
 <br>
 <label for="">Password</label>
-<input type="text" value="<%= PasswordValue %>" name="password">
+<input type="password" value="<%= PasswordValue %>" name="password">
 <button type="submit">login</button>
 </form>
+<a href="/signup">Sign up</a>
+<!-- <button onclick="showSignInBlock()">Sign up</button> -->
+</div>
+
+
+
 
 </body>
 </html>

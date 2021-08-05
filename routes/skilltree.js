@@ -41,6 +41,7 @@ router.post('/', async (req, res) =>{
     try{
         // console.log(req.body.myTime)
         console.log('Saving Skills....')
+        let myUsr = req.body.myUsr
         let myObj = JSON.parse(req.body.myBtns)
         let numSkills = parseInt(req.body.numSkills)
         console.log(typeof numSkills)
@@ -48,7 +49,7 @@ router.post('/', async (req, res) =>{
         // console.log(typeof myDoc)
         // console.log(myDoc)
         // await StrixhavenDAO.updateArcanum(myObj)
-        await StrixhavenDAO.updateArcanum(myObj, numSkills)
+        await StrixhavenDAO.updateArcanum(myUsr, myObj, numSkills)
         console.log('Saving Skills Success!')
         // console.log(typeof myObj)
         /// console.dir(myObj)
